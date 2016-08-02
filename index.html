@@ -1,0 +1,73 @@
+<!--ALL RIGHTS RESERVED-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>        
+        <!--jquery & jqueryui-->
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.0.js"></script>
+        <script type="text/javascript" src="http://code.jquery.com/ui/1.10.0/jquery-ui.js"></script>
+        <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.10.0/themes/redmond/jquery-ui.css"/>
+        <!--\jquery & jqueryui-->
+        <!--timer-->
+        <script type="text/javascript" src="timer.js"></script>
+        <!--\timer-->
+        <!--yo-->
+        <link rel="stylesheet" type="text/css" href="mine.css"/>
+        <script type="text/javascript" src="mine.js"></script>
+        <!--\yo-->
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <p id="msg">Hi I'm Robert, I just started this Website, I'm really good using jQuery and almost anything related to Web Development, here's a Minesweeper I did in a couple hours. My email is <a href="mailto:rhinojosahdz@gmail.com">rhinojosahdz@gmail.com</a> for anything you may need. Have fun :)</p>
+        <table oncontextmenu="return false;" id="minesweeper" border="8">
+            <tbody>
+                <tr>
+                    <td align="center"><div id="mine_counter"></div></td>
+                    <td align="center">
+                        <button id="face" class="standby"></button>
+                    </td>
+                    <td align="center"><div id="timer"></div></td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <div id="grid"></div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table id="config" border="0">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mines:</td>
+                    <td><input id="cmines"></td>
+                </tr>
+                <tr>
+                    <td>Lines:</td>
+                    <td><input id="clines"></td>
+                </tr>
+                <tr>
+                    <td>Columns:</td>
+                    <td><input id="ccolumns"></td>
+                </tr>
+                <tr>
+                    <td>Time:</td>
+                    <td><input id="ctime"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button id="new_game_button">New Game</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div id="templates">
+            <button class="spot"></button>
+            <div class="line"></div>
+        </div>
+    </body>
+</html>
